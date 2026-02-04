@@ -53,13 +53,6 @@ const teamMembers = [
 <style scoped>
 .team-section {
   padding: 100px 0;
-  background: #ffffff;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
 }
 
 .section-header {

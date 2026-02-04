@@ -2,6 +2,7 @@
 import PageHeroSection from '@/components/Section/PageHeroSection.vue'
 import MessageVisionSection from '@/components/Section/MessageVisionSection.vue'
 import HistorySection from '@/components/Section/HistorySection.vue'
+import FacilitiesSection from '@/components/Section/FacilitiesSection.vue'
 import TeamSection from '@/components/Section/TeamSection.vue'
 </script>
 
@@ -19,6 +20,9 @@ import TeamSection from '@/components/Section/TeamSection.vue'
 
       <!-- History & Traditions Section -->
       <HistorySection />
+
+      <!-- Facilities Section -->
+      <FacilitiesSection />
 
       <!-- Management & Team Section -->
       <TeamSection />
