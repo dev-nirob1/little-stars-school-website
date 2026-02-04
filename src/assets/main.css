@@ -1,6 +1,6 @@
 @import './grid.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,15 +9,31 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --body-font: 'Cabin', sans-serif;
-  --heading-font: 'Quicksand', serif;
+  --body-font: 'Inter', 'Hind Siliguri', sans-serif;
+  --heading-font: 'Outfit', 'Hind Siliguri', sans-serif;
 
-  --primary-color: #13443c;
-  --secondary-color: #1abc9c;
-  --accent-color: #CBA135;
-  --white-color: #ffffff;
-  --dark-color: #000000;
-  --light-color: #6c757d;
+  /* 2026 Neo-Modern 4-Color Palette */
+  --primary-color: #0f172a; /* Deep Slate */
+  --accent-color: #10b981; /* Emerald Flow - Mapped to user's --accent */
+  --secondary-color: #10b981;
+  --body-bg: #f8fafc; /* Clean Slate Background - Mapped to user's --base */
+  --white-color: #ffffff; /* Mapped to user's --surface */
+
+  /* Semantic Aliases for Components (Navbar, etc) */
+  --primary: var(--primary-color);
+  --accent: var(--accent-color);
+  --base: var(--body-bg);
+  --surface: var(--white-color);
+
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --radius: 16px;
+  --transition: cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+
   --border-color: #dee2e6;
   /* ---------------typography------------ */
   /* headings  */
@@ -35,7 +51,7 @@ body {
   overflow-x: hidden;
   font-family: var(--body-font);
   line-height: 1.7;
-  color: var(--dark-color);
+  color: var(--primary-color);
   background-color: var(--body-bg);
 }
 h1,
@@ -74,6 +90,10 @@ h6 {
 }
 .sub-title {
   font-size: var(--heading-5);
+}
+p {
+  padding: 0;
+  margin: 0;
 }
 /* ------------------utility classes starts here-------------- */
 /* anchor color inherit  */
@@ -173,21 +193,48 @@ ul {
 
 /* button styles  */
 .btn {
-  position: relative;
-  font-weight: 700;
-  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 0.5rem;
+  font-weight: 600;
   text-decoration: none;
-  outline: none;
-  border: none;
-  overflow: hidden;
-  padding: 1rem 2.5rem;
-  margin-top: 0.5rem;
-  border-radius: 1.5rem;
-  color: var(--white-color);
-  font-size: 1rem;
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: 1px solid transparent;
   text-align: center;
-  transition: all 0.3s ease-in-out;
-  line-height: 1;
+  line-height: 1.2;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(15, 23, 42, 0.3);
+}
+
+.btn-secondary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(16, 185, 129, 0.3);
+}
+
+.btn-outline {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
 }
 
 /* ---------circle btn ------------ */
