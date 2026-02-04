@@ -51,13 +51,13 @@ onUnmounted(() => {
         <li><router-link to="/contact">যোগাযোগ</router-link></li>
       </ul>
       <div class="mobile-actions">
-        <router-link to="/login" class="btn btn-outline">লগইন</router-link>
+        <router-link to="/auth/login" class="btn btn-outline">লগইন</router-link>
         <router-link to="/admission" class="btn btn-primary">ভর্তি</router-link>
       </div>
     </nav>
 
     <div class="nav-actions">
-      <router-link to="/login" class="btn btn-outline">লগইন</router-link>
+      <router-link to="/auth/login" class="btn btn-outline">লগইন</router-link>
       <router-link to="/admission" class="btn btn-primary">ভর্তি</router-link>
     </div>
   </header>
@@ -68,7 +68,10 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 100%;
+  max-width: 100%;
   background: var(--surface);
   border-bottom: 1px solid var(--border-color);
   padding: 16px 5%;
@@ -76,23 +79,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: var(--transition);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Scrolled Style - Floating Glass */
 header.scrolled {
-  top: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 48px);
-  max-width: 1200px;
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-  border-radius: 24px;
-  padding: 12px 24px;
-  box-shadow: var(--shadow-soft);
+  top: 12px;
+  width: calc(100% - 40px);
+  max-width: 1240px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 12px 32px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
 }
 
 .logo-modern {

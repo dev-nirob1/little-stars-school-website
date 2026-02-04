@@ -32,7 +32,7 @@
             <li><router-link to="/">হোম</router-link></li>
             <li><router-link to="/about">আমাদের সম্পর্কে</router-link></li>
             <li><router-link to="/notice">নোটিশ বোর্ড</router-link></li>
-            <li><router-link to="/academics">একাডেমিক তথ্য</router-link></li>
+            <li><router-link to="/academic">একাডেমিক তথ্য</router-link></li>
             <li><router-link to="/gallery">ফটো গ্যালারি</router-link></li>
           </ul>
         </div>
@@ -44,7 +44,7 @@
             <li><router-link to="/admission">ভর্তি প্রক্রিয়া</router-link></li>
             <li><router-link to="/contact">যোগাযোগ</router-link></li>
             <li><router-link to="/result">ফলাফল পোর্টাল</router-link></li>
-            <li><router-link to="/login">লগইন করুন</router-link></li>
+            <li><router-link to="/auth/login">লগইন করুন</router-link></li>
             <li><router-link to="/privacy">প্রাইভেসি পলিসি</router-link></li>
           </ul>
         </div>
