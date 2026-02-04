@@ -1,5 +1,7 @@
 <script setup>
 import PageHeroSection from '@/components/Section/PageHeroSection.vue'
+import MessageVisionSection from '@/components/Section/MessageVisionSection.vue'
+import HistorySection from '@/components/Section/HistorySection.vue'
 </script>
 
 <template>
@@ -11,30 +13,17 @@ import PageHeroSection from '@/components/Section/PageHeroSection.vue'
     />
 
     <main class="about-main-content">
-      <div class="container">
-        <div class="content-placeholder-area">
-          <p>আপনার কন্টেন্টের জন্য অপেক্ষা করছি...</p>
-        </div>
-      </div>
+      <!-- Principal Message & Vision Section -->
+      <MessageVisionSection />
+
+      <!-- History & Traditions Section -->
+      <HistorySection />
     </main>
   </div>
 </template>
 
 <style scoped>
 .about-main-content {
-  padding: 60px 0;
-  background: white;
-}
-
-.content-placeholder-area {
-  min-height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f8fafc;
-  border-radius: 20px;
-  border: 1px solid #e2e8f0;
-  color: #64748b;
-  font-size: 1.1rem;
+  padding-bottom: 40px;
 }
 </style>
