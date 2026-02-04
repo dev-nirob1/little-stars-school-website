@@ -28,6 +28,11 @@ const front_routes = [
         name: 'gallery',
         component: () => import('../Pages/GalleryPage.vue'),
       },
+      {
+        path: 'contact',
+        name: 'contact',
+        component: () => import('../Pages/ContactPage.vue'),
+      },
     ],
   },
 ]
