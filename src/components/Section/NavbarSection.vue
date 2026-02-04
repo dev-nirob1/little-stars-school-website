@@ -43,10 +43,10 @@ onUnmounted(() => {
 
     <nav :class="{ open: isMobileMenuOpen }">
       <ul>
-        <li><router-link to="/" class="active">হোম</router-link></li>
+        <li><router-link to="/">হোম</router-link></li>
         <li><router-link to="/about">সম্পর্কে</router-link></li>
         <li><router-link to="/notice">নোটিশ</router-link></li>
-        <li><router-link to="/academics">একাডেমিক</router-link></li>
+        <li><router-link to="/academic">একাডেমিক</router-link></li>
         <li><router-link to="/gallery">গ্যালারি</router-link></li>
         <li><router-link to="/contact">যোগাযোগ</router-link></li>
       </ul>

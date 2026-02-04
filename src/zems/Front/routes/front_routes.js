@@ -18,6 +18,11 @@ const front_routes = [
         name: 'notice',
         component: () => import('../Pages/NoticePage.vue'),
       },
+      {
+        path: 'academic',
+        name: 'academic',
+        component: () => import('../Pages/AcademicPage.vue'),
+      },
     ],
   },
 ]
