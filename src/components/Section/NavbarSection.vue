@@ -23,7 +23,7 @@ onUnmounted(() => {
 
 <template>
   <header id="header" :class="{ scrolled: isScrolled, 'mobile-menu-active': isMobileMenuOpen }">
-    <a href="index.html" class="logo-modern">
+    <router-link to="/" class="logo-modern">
       <img
         src="https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?auto=format&fit=crop&q=80&w=200"
         alt="Logo"
@@ -32,7 +32,7 @@ onUnmounted(() => {
         <h1>কিডস গ্রিন</h1>
         <p>KIDS GREEN KINDERGARTEN</p>
       </div>
-    </a>
+    </router-link>
 
     <!-- Hamburger Button -->
     <button class="menu-toggle" @click="toggleMobileMenu" aria-label="Toggle menu">
@@ -43,22 +43,22 @@ onUnmounted(() => {
 
     <nav :class="{ open: isMobileMenuOpen }">
       <ul>
-        <li><a href="index.html" class="active">হোম</a></li>
-        <li><a href="about/index.html">সম্পর্কে</a></li>
-        <li><a href="notice/index.html">নোটিশ</a></li>
-        <li><a href="academics/index.html">একাডেমিক</a></li>
-        <li><a href="gallery/index.html">গ্যালারি</a></li>
-        <li><a href="contact/index.html">যোগাযোগ</a></li>
+        <li><router-link to="/" class="active">হোম</router-link></li>
+        <li><router-link to="/about">সম্পর্কে</router-link></li>
+        <li><router-link to="/notice">নোটিশ</router-link></li>
+        <li><router-link to="/academics">একাডেমিক</router-link></li>
+        <li><router-link to="/gallery">গ্যালারি</router-link></li>
+        <li><router-link to="/contact">যোগাযোগ</router-link></li>
       </ul>
       <div class="mobile-actions">
-        <a href="login/index.html" class="btn btn-outline">লগইন</a>
-        <a href="admission/index.html" class="btn btn-primary">ভর্তি</a>
+        <router-link to="/login" class="btn btn-outline">লগইন</router-link>
+        <router-link to="/admission" class="btn btn-primary">ভর্তি</router-link>
       </div>
     </nav>
 
     <div class="nav-actions">
-      <a href="login/index.html" class="btn btn-outline">লগইন</a>
-      <a href="admission/index.html" class="btn btn-primary">ভর্তি</a>
+      <router-link to="/login" class="btn btn-outline">লগইন</router-link>
+      <router-link to="/admission" class="btn btn-primary">ভর্তি</router-link>
     </div>
   </header>
 </template>
