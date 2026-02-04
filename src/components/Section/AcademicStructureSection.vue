@@ -53,12 +53,6 @@ const schedule = [
   padding-bottom: 40px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

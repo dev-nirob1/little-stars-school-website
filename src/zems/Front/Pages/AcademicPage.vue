@@ -28,7 +28,7 @@ import CurriculumSection from '@/components/Section/CurriculumSection.vue'
 
 <style scoped>
 .academic-main-content {
-  padding: 60px 0 20px;
+  padding: 3rem 0;
   background: white;
 }
 </style>

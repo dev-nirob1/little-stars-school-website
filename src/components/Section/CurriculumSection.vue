@@ -20,12 +20,6 @@
   padding: 24px 0 100px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
 .curriculum-box {
   background: #f8fafc;
   border: 1px solid #f1f5f9;
