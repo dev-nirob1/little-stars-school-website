@@ -14,11 +14,5 @@ import TestimonialSection from '@/components/Section/TestimonialSection.vue'
     <EventSection />
 
     <TestimonialSection />
-
-    <div class="p-10 text-center">
-      <BaseTitle>Welcome to Little Stars School</BaseTitle>
-      <BaseParagraph>Global registration test</BaseParagraph>
-      <BaseButton class="btn btn-primary">Click Me</BaseButton>
-    </div>
   </div>
 </template>

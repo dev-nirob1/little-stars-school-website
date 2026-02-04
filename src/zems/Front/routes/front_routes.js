@@ -8,6 +8,11 @@ const front_routes = [
         name: 'home',
         component: () => import('../Pages/HomePage.vue'),
       },
+      {
+        path: 'about',
+        name: 'about',
+        component: () => import('../Pages/AboutPage.vue'),
+      },
     ],
   },
 ]
