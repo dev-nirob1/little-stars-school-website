@@ -23,6 +23,11 @@ const front_routes = [
         name: 'academic',
         component: () => import('../Pages/AcademicPage.vue'),
       },
+      {
+        path: 'gallery',
+        name: 'gallery',
+        component: () => import('../Pages/GalleryPage.vue'),
+      },
     ],
   },
 ]
