@@ -107,7 +107,7 @@
   color: white;
   background:
     linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
-    url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=1200');
+    url('@/assets/images/hero_bg.png');
   background-size: cover;
   background-position: center;
 }
