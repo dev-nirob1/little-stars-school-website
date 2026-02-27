@@ -106,8 +106,7 @@
   justify-content: center;
   color: white;
   background:
-    linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)),
-    url('@/assets/images/hero_bg.png');
+    linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('/images/hero_bg.png');
   background-size: cover;
   background-position: center;
 }

@@ -16,38 +16,33 @@ const filters = [
 const galleryItems = [
   {
     id: 1,
-    image:
-      'https://images.unsplash.com/photo-1577896851231-70ef14603e80?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/gallery_sports_1.png',
     category: 'Sports',
     title: 'বার্ষিক ক্রীড়া প্রতিযোগিতা - ২০২৬',
   },
   {
     id: 2,
-    image:
-      'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/gallery_edu_1.png',
     category: 'Education',
     title: 'ডিজিটাল ক্লাসরুম অ্যাক্টিভিটি',
   },
   {
     id: 3,
-    image:
-      'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/gallery_cultural_1.png',
     category: 'Cultural',
     title: 'চিত্রাঙ্কন প্রতিযোগিতা',
   },
   {
     id: 4,
-    image:
-      'https://images.unsplash.com/photo-1524061614234-8449637536ee?auto=format&fit=crop&q=80&w=1200',
-    category: 'Education',
-    title: 'জাতীয় দিবস উদযাপন',
+    image: '/images/gallery_sports_2.png',
+    category: 'Sports',
+    title: 'স্কুল বাগান ও খেলাধুলা',
   },
   {
     id: 5,
-    image:
-      'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/gallery_edu_2.png',
     category: 'Education',
-    title: 'সহ-শিক্ষা কার্যক্রম',
+    title: 'সায়েন্স ল্যাব সেশন',
   },
   {
     id: 6,
