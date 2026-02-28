@@ -38,6 +38,11 @@ const front_routes = [
         name: 'admission',
         component: () => import('../Pages/AdmissionPage.vue'),
       },
+      {
+        path: 'result',
+        name: 'result',
+        component: () => import('../Pages/ResultPage.vue'),
+      },
     ],
   },
 ]
